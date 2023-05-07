@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="parent">
+      <UniqueIdentifier>{bc1c8ec9-ad74-4d5f-bf23-3139bed92115}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="child">
+      <UniqueIdentifier>{72b630c9-f1e4-46be-965a-8538c134fad8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="parent\transport.h">
+      <Filter>parent</Filter>
+    </ClInclude>
+    <ClInclude Include="child\car.h">
+      <Filter>child</Filter>
+    </ClInclude>
+    <ClInclude Include="child\bicycle.h">
+      <Filter>child</Filter>
+    </ClInclude>
+    <ClInclude Include="child\viz.h">
+      <Filter>child</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="child\application.cpp" />
+  </ItemGroup>
+</Project>
